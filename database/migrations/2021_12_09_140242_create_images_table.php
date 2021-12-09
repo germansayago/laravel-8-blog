@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoriesTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name');
-            $table->string('slug');
-
+            $table->string('url');
+            $table->unsignedBigInteger('imageable_id');
+            $table->string('imageable_type');
+            
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('images');
     }
 }
