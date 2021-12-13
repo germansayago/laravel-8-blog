@@ -17,7 +17,7 @@
               </h1>
               <div>
 
-                <a class="inline-block px-3 h-6 bg-gray-300 text-gray-800 rounded-full mb-3" href="{{ route('posts.category', $post->category->id)}}">{{ $post->category->name }}</a>
+                <a class="inline-block px-3 h-6 bg-gray-300 text-gray-800 rounded-full mb-3" href="{{ route('posts.category', $post->category)}}">{{ $post->category->name }}</a>
               </div>
             </div>
           </article>

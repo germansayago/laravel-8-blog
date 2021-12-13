@@ -30,7 +30,7 @@
         <h1 class="text-xl font-bold text-gray-600 mb-4">Categorías</h1>
         <div>
           @foreach ($categories as $category)
-          <a class="inline-block px-3 h-6 bg-gray-300 text-gray-800 rounded-full mb-3" href="{{ route('posts.category', $category->id) }}">
+          <a class="inline-block px-3 h-6 bg-gray-300 text-gray-800 rounded-full mb-3" href="{{ route('posts.category', $category) }}">
             {{ $category->name }}
           </a>
           @endforeach
