@@ -247,15 +247,15 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'dashboard',
-            'url'         => 'dashboard',
+            'text'        => 'Dashboard',
+            'url'         => 'admin',
             'icon'        => 'fas fa-fw fa-tachometer-alt'
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'ADMINISTRADOR'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Categories',
+            'route'  => 'admin.categories.index',
+            'icon' => 'fab fa-fw fa-buffer',
         ],
         [
             'text' => 'change_password',

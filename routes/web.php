@@ -21,6 +21,6 @@ Route::get('/category/{category}', [PostController::class, 'category'])->name('p
 Route::get('/tag/{tag}', [PostController::class, 'tag'])->name('posts.tag');
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('admin.index');
+// })->name('dashboard');
